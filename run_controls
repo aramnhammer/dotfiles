@@ -13,6 +13,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
 export PATH="~/.cargo/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/Users/$HOME/Documents/c3:$PATH"
+source $HOME/.cargo/env
 
 # git
 alias gs='git status'
