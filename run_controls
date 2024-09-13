@@ -1,0 +1,84 @@
+HISTCONTROL=ignoreboth
+PROMPT_COMMAND="history -a"
+HISTSIZE=50000
+HISTFILESIZE=10000000
+
+# settings
+# EDITOR=vim
+
+# Set PATH with the essential system paths
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin"
+
+# Append custom paths
+export PATH="~/.cargo/bin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/Users/$HOME/Documents/c3:$PATH"
+
+# git
+alias gs='git status'
+alias gc='git commit'
+alias gcu='git add -u && git commit -m '
+alias gd='git diff'
+alias gl='git log'
+alias gp='git pull'
+alias gcb='git checkout -b'
+alias gco='git checkout'
+alias gf='git fetch'
+alias gm='git merge'
+alias gph="git push origin HEAD"
+
+
+# colors
+alias ls='ls --color=auto'
+
+# git
+alias gs='git status'
+alias gc='git commit'
+alias gcu='git add -u && git commit -m '
+alias gd='git diff'
+alias gl='git log'
+alias gp='git pull'
+alias gcb='git checkout -b'
+alias gco='git checkout'
+alias gf='git fetch'
+alias gm='git merge'
+alias gph="git push origin HEAD"
+
+
+# colors
+alias ls='ls --color=auto'
+
+# git
+alias gs='git status'
+alias gc='git commit'
+alias gcu='git add -u && git commit -m '
+alias gd='git diff'
+alias gl='git log'
+alias gp='git pull'
+alias gcb='git checkout -b'
+alias gco='git checkout'
+alias gf='git fetch'
+alias gm='git merge'
+alias gph="git push origin HEAD"
+
+
+# colors
+alias ls='ls --color=auto'
+
+# git
+alias gs='git status'
+alias gc='git commit'
+alias gcu='git add -u && git commit -m '
+alias gd='git diff'
+alias gl='git log'
+alias gp='git pull'
+alias gcb='git checkout -b'
+alias gco='git checkout'
+alias gf='git fetch'
+alias gm='git merge'
+alias gph="git push origin HEAD"
+
+
+# colors
+alias ls='ls --color=auto'
+
