@@ -1,5 +1,6 @@
 syntax on
 filetype on
+autocmd TextChanged,TextChangedI <buffer> silent write
 
 set number relativenumber
 set expandtab
@@ -15,13 +16,15 @@ set nocompatible
 set encoding=utf-8
 set hlsearch
 set history=700
-set termguicolors
-set background=dark
 set tabpagemax=1000
 set ruler
 set nojoinspaces
 set shiftround
 set relativenumber
+
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
 
 map <C-j> <C-W>j
 map <C-k> <C-W>k
