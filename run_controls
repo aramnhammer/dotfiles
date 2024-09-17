@@ -16,6 +16,7 @@ export PATH="/Users/$HOME/Documents/c3:$PATH"
 source $HOME/.cargo/env
 
 # git
+alias ga="git add"
 alias gs='git status'
 alias gc='git add -u && git commit -m '
 alias gd='git diff'
@@ -29,4 +30,4 @@ alias gph="git push origin HEAD"
 
 
 # colors
-alias ls='ls --color=auto'
+alias ls='ls -la'
