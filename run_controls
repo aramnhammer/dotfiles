@@ -31,3 +31,18 @@ alias gph="git push origin HEAD"
 
 # colors
 alias ls='ls -la'
+
+# python
+auto_activate_venv() {
+    if [ -d ".venv" ]; then
+        source .venv/bin/activate
+    elif [ -d "venv" ]; then
+        source venv/bin/activate
+    else
+        deactivate 2>/dev/null
+    fi
+}
+auto_activate_venv
+
+cd() { builtin cd "$@" && if [ -d ".venv" ]; then source .venv/bin/activate; elif [ -d "venv" ]; then source venv/bin/activate; else deactivate 2>/dev/null; fi; }
+

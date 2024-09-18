@@ -25,13 +25,18 @@ set relativenumber
 set showcmd             " show (partial) command in status line
 set backspace=indent,eol,start  " make backspaces more powerfull
 
+nnoremap <esc> :noh<return><esc>
+
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
-nnoremap <esc> :noh<return><esc>
+
+inoremap (( (<Esc>A)
+inoremap [[ [<Esc>A]
+inoremap {{ {<Esc>A}
+
 
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
-
