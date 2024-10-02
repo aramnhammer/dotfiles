@@ -1,3 +1,5 @@
+setopt prompt_subst
+
 HISTCONTROL=ignoreboth
 PROMPT_COMMAND="history -a"
 HISTSIZE=50000
@@ -45,4 +47,19 @@ auto_activate_venv() {
 auto_activate_venv
 
 cd() { builtin cd "$@" && if [ -d ".venv" ]; then source .venv/bin/activate; elif [ -d "venv" ]; then source venv/bin/activate; else deactivate 2>/dev/null; fi; }
+
+function git_branch_name()
+{
+  branch=$(git symbolic-ref HEAD 2> /dev/null | awk 'BEGIN{FS="/"} {print $NF}')
+  if [[ $branch == "" ]];
+  then
+    :
+  else
+    echo '- ('$branch')'
+  fi
+}
+
+
+# Config for prompt. PS1 synonym.
+prompt='%2/ $(git_branch_name) > '
 
