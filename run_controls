@@ -20,7 +20,9 @@ source $HOME/.cargo/env
 # git
 alias ga="git add"
 alias gs='git status'
-alias gc='git add -u && git commit -m '
+alias gca='git add -A && git commit -m '
+alias gcu='git add -u && git commit -m '
+alias gc='git commit -m '
 alias gd='git diff'
 alias gl='git log'
 alias gp='git pull'
@@ -46,7 +48,7 @@ auto_activate_venv() {
 }
 auto_activate_venv
 
-cd() { builtin cd "$@" && if [ -d ".venv" ]; then source .venv/bin/activate; elif [ -d "venv" ]; then source venv/bin/activate; else deactivate 2>/dev/null; fi; }
+cd() { builtin cd "$@" && if [ -d ".venv" ]; then source .venv/bin/activate; elif [ -d "venv" ]; then source venv/bin/activate; fi; }
 
 function git_branch_name()
 {
@@ -63,3 +65,4 @@ function git_branch_name()
 # Config for prompt. PS1 synonym.
 prompt='%2/ $(git_branch_name) > '
 
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
