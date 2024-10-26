@@ -20,8 +20,8 @@ source $HOME/.cargo/env
 # git
 alias ga="git add"
 alias gs='git status'
-alias gca='git add -A && git commit -m '
-alias gcu='git add -u && git commit -m '
+alias gac='git add -A && git commit -m '
+alias guc='git add -u && git commit -m '
 alias gc='git commit -m '
 alias gd='git diff'
 alias gl='git log'
