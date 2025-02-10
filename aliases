@@ -1,7 +1,8 @@
 # git
+alias ga='git add'
 alias gs='git status'
 alias gc='git commit'
-alias gcu='git add -u && git commit -m '
+alias gac='git add -u && git commit -m'
 alias gd='git diff'
 alias gl='git log'
 alias gp='git pull'

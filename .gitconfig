@@ -2,4 +2,7 @@
 	name = aram
 	email = aramnhammer@outlook.com
 [push]
-	default = current
+    default = current
+[rebase]
+    autostash = true
+

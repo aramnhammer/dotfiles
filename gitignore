@@ -3,3 +3,16 @@
 .vscode
 .idea
 .bin
+.rbenv
+*.zsql
+*.zsql.*
+glide-*.gz
+glide-*.zsql
+zboot.sh
+
+.rbenv/linux-2.6-libc-2.5-x86_64/versions/2.5.1/bin/yri
+.rbenv/linux-2.6-libc-2.5-x86_64/Gemfile.2.5.1
+.rbenv/linux-2.6-libc-2.5-x86_64/Gemfile.2.5.1.lock
+.rbenv/linux-2.6-libc-2.5-x86_64/versions/2.5.1/bin/yard
+.rbenv/linux-2.6-libc-2.5-x86_64/versions/2.5.1/bin/yardoc
+.rbenv/linux-2.6-libc-2.5-x86_64/versions/2.5.1/bin/yri
