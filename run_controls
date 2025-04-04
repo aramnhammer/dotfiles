@@ -34,7 +34,7 @@ alias gph="git push origin HEAD"
 
 
 # colors
-alias ls='ls -la'
+alias ls='ls -lah'
 
 # python
 auto_activate_venv() {
@@ -69,4 +69,11 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export PATH="$PATH:$(go env GOPATH)/bin"
 export TERM=xterm-256color
 
+if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+fi
 
+
+
+# bun completions
+[ -s "/Users/aram/.bun/_bun" ] && source "/Users/aram/.bun/_bun"
